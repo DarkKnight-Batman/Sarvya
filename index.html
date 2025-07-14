@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sravya's Magical Birthday</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+      color: #fff;
+    }
+
+    .page {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .welcome {
+      background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXFhNnhnMml6d3k4aHptOWo5cTdrZ2cxa2p4anFhdDZ6ZXFneDRlNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ofK1go9uLVyPbB8cze/giphy.gif') no-repeat center center;
+      background-size: cover;
+    }
+
+    .scroll {
+      background: url('https://images.unsplash.com/photo-1517511620798-cec17d428bc0?auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+      background-size: cover;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #ff69b4;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      box-shadow: 0 5px 15px rgba(255, 105, 180, 0.6);
+      transition: transform 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .scroll-content {
+      max-width: 700px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      font-family: 'Georgia', serif;
+      color: #fceabb;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      box-shadow: 0 0 20px #fceabb;
+    }
+  </style>
+</head>
+<body>
+  <!-- 🏰 Welcome Page -->
+  <section class="page welcome">
+    <h1>A magical day begins here...</h1>
+    <button class="btn" onclick="scrollToSection('scroll')">Enter Sravya's Story</button>
+  </section>
+
+  <!-- 🎉 Party Vibe Scroll -->
+  <section class="page scroll" id="scroll">
+    <div class="scroll-content">
+      <p>
+        Hey Sravya! 🎈<br><br>
+        Here's to another lap around the sun — brighter, bolder, and way more fun!<br><br>
+        May today bring the kind of laughter that echoes, surprises that light up your face, and moments that feel like confetti in your chest. 💫<br><br>
+        Stay wild, stay wonderful — and don’t forget, the best days are still waiting to meet you. 🥂<br><br>
+        Happy Birthday! You deserve cake, sparkle, and a playlist full of your kind of joy. 💃
+      </p>
+    </div>
+  </section>
+
+  <script>
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+</html>
